@@ -1,0 +1,171 @@
+html 
+{
+    font-size: 20px;
+}
+:root
+{
+    --oran-col:#FD3B38;
+    --tex-gry:#62657C;
+}
+
+.navbar-brand
+{
+    width: 150px !important;
+}
+.custom-nav 
+{
+    background-color: #010A35;
+    color: var(--tex-gry);
+}
+.icon-nav i
+{
+    width: 50px;
+    height: 50px;
+    background-color: #F6F7F8;
+    color: #FC6260;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    border-radius: 100%;
+}
+.carousel-item,#sec3,.s5-img
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tm 
+{
+   place-items: end;
+}
+
+.cont
+{
+    padding: 300px 0;
+    text-align: center;
+}
+#sec3 
+{
+    background-position: center;
+}
+.my-cont 
+{
+    padding: 100px 0;
+}
+.my-cont  h1 
+{
+    color: white;
+}
+.my-cont  p
+{
+    color: var(--oran-col);
+}
+.cont p 
+{
+        color: var(--tex-gry);
+}
+.carousel-item:first-of-type
+{
+    background-image: linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/banner.jpg");
+    
+}
+.carousel-item:nth-child(2)
+{
+    background-image: linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/ban.jpg");
+    
+}
+
+#sec3 
+{
+    background-image: linear-gradient(rgba(1, 10, 53, .8)),  url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/vardhman_city-patel_nagar_bhopal-bhopal-vardhman_group.jpg");
+}
+.s5-img:nth-child(1)
+{
+    background-image:linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/w7.webp");
+    background-attachment: fixed;
+}
+.s5-img:nth-child(2)
+{
+    background-image:linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/w8.jpeg");
+     background-attachment: fixed;
+}
+#sec4 .icon i
+{
+   background-color: var(--oran-col);
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+    width: 80px;
+    place-content: center;
+    height: 80px;
+    border-radius: 100%;
+}
+.card ,.card-img
+{
+    border-radius: 0% !important;
+}
+.card-body 
+{
+    background-color: #F6F7F8 !important;
+}
+#sec4 p 
+{
+    color: var(--tex-gry);
+}
+#sec6 .col-lg-6
+{
+    padding: 100px !important;
+}
+#sec8 a 
+{
+    text-decoration: none !important;
+}
+#sec8 i 
+{
+    color: var(--oran-col);
+    font-size: 40px !important;
+}
+#sec8 p 
+{
+    color: black !important;
+}
+#sec8 span 
+{
+    background:linear-gradient(to right,rgb(230, 196, 196),var(--oran-col)) !important;
+    border-radius: 0% !important;
+    padding: 6px 10px !important;
+    border: none !important;
+    font-size: .9rem;
+}
+footer 
+{
+    background-color: #010A35;
+    padding: 100px 0;
+    color: white;
+}
+footer ul ,footer p
+{
+    list-style: none;
+    color: var(--tex-gry);
+}
+footer .arrow
+{
+    transition: .5s;
+}
+footer .arrow:hover
+{
+    color: var(--oran-col);
+    transform: scaleX(1.01);
+}
+footer .arrow::before
+{
+    content: ">";
+    margin: 10px ;
+}
+@media(max-width:768px)
+{
+    .custom-nav,.icon-nav i
+    {
+        display: none;
+    }
+}
