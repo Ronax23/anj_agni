@@ -7,7 +7,64 @@ html
     --oran-col:#FD3B38;
     --tex-gry:#62657C;
 }
-
+[id^="sec"]
+{
+    padding: 40px 0;
+}
+.fors 
+{
+    display: flex;
+    place-content: center;
+    position: fixed;
+    background: linear-gradient(rgba(0,0,0,.8));
+    width: 100%;
+    height: 100%;
+    z-index: 8888;
+    top: 0;
+}
+.fors form 
+{
+    background-color: white;
+    box-shadow: 15px 15px 50px purple;
+    margin-top: 30vh;
+    /* width: 40%; */
+    height: 45vh;
+    position: relative;
+    padding: 50px;}
+    .fors form i {
+        position: absolute;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 100%;
+        background-color: #f5f5f5;
+        right: 20px;
+        top: 20px;
+    }
+.stick
+{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: var(--oran-col);
+    border-radius: 100%;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    transition-duration: .5s;
+    z-index: 999;
+}
+.stick a 
+{
+    color: white;
+}
+.stick:hover 
+{
+    transform: translateY(-5px);
+    background-color: #010A35;
+}
 .navbar-brand
 {
     width: 150px !important;
@@ -16,6 +73,31 @@ html
 {
     background-color: #010A35;
     color: var(--tex-gry);
+}
+.carousel-item h1 ,#sec2 h2,#sec4 h1,#sec4 h4,#sec5 h1,#sec5 h5,#sec7 h1,#sec7 h5,#sec8 h2
+{
+    font-weight: bold !important;
+}
+.carousel-item .btn,#sec6 .btn,.fors .btn
+{
+    background-color: var(--oran-col) !important;
+    border-radius: 0% !important;
+    color: white;
+    font-size: 1rem;
+    transition-duration: .3s;
+    text-transform: capitalize !important;
+}
+.carousel-item .btn:hover,#sec6 .btn:hover,.fors .btn:hover
+{
+    background-color: #001064 !important;
+    color: white !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon 
+{
+    background-color: #050E38;
+    border-radius: 100%;
+    background-size: 60% !important;
+    padding: 23px !important;
 }
 .icon-nav i
 {
@@ -51,16 +133,18 @@ html
 .my-cont 
 {
     padding: 100px 0;
+
 }
 .my-cont  h1 
 {
     color: white;
+    font-weight: bold;
 }
 .my-cont  p
 {
     color: var(--oran-col);
 }
-.cont p 
+.cont p,#sec2 p 
 {
         color: var(--tex-gry);
 }
@@ -86,8 +170,13 @@ html
 }
 .s5-img:nth-child(2)
 {
-    background-image:linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/w8.jpeg");
+    background-image:linear-gradient(rgba(255, 255, 255, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/w8.jpeg");
      background-attachment: fixed;
+}
+#sec6 form 
+{
+    background-color: white !important;
+    padding: 40px;
 }
 #sec4 .icon i
 {
@@ -107,6 +196,11 @@ html
 .card-body 
 {
     background-color: #F6F7F8 !important;
+        aspect-ratio: 7 / 2;
+}
+#sec5 h5:hover 
+{
+    color: var(--oran-col);
 }
 #sec4 p 
 {
@@ -115,6 +209,13 @@ html
 #sec6 .col-lg-6
 {
     padding: 100px !important;
+}
+#sec6 span,.fors span{
+    text-align: center;
+    background-color: antiquewhite;
+    display: block;
+    color: red;
+    box-shadow: 10px 10px 20px white;
 }
 #sec8 a 
 {
@@ -129,19 +230,43 @@ html
 {
     color: black !important;
 }
-#sec8 span 
+#sec8 span
 {
     background:linear-gradient(to right,rgb(230, 196, 196),var(--oran-col)) !important;
     border-radius: 0% !important;
     padding: 6px 10px !important;
-    border: none !important;
+    border: 1px solid black !important;
     font-size: .9rem;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+#sec8 span:hover 
+{
+     background:linear-gradient(to right,black,black) !important;
+     color: white !important;
+}
+#sec8 .col-lg-4{
+    transition-duration: .5s;
+}
+.card-img 
+{
+        aspect-ratio: 3 / 2;
+}
+#sec8 .col-lg-4:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 50px black;
 }
 footer 
 {
     background-color: #010A35;
-    padding: 100px 0;
+    padding: 100px 0 20px 0;
     color: white;
+}
+footer a 
+{
+    text-decoration: none !important;
+    color: #62657C;
 }
 footer ul ,footer p
 {
@@ -162,10 +287,21 @@ footer .arrow::before
     content: ">";
     margin: 10px ;
 }
+footer span 
+{
+    color: var(--oran-col);
+}
 @media(max-width:768px)
 {
     .custom-nav,.icon-nav i
     {
         display: none;
     }
+}
+
+@media (max-width:450px)
+{
+    #sec6 .col-lg-6 {
+    padding: 26px !important;
+}
 }
