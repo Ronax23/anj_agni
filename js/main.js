@@ -2,7 +2,7 @@ let countsec=document.getElementById("sec3")
 let count=countsec.querySelectorAll("h1")
 let s3=false
 count.forEach(el=>{
-    let num=0.0
+    let num=0
 
 window.addEventListener("scroll",()=>{
     if(window.scrollY>countsec.offsetTop- countsec.offsetHeight-100&&!s3)
