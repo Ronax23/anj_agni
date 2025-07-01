@@ -10,6 +10,16 @@ html
 [id^="sec"]
 {
     padding: 40px 0;
+    overflow: hidden;
+}
+.container{
+    transform: translateY(100px);
+    opacity: 0;
+    transition-duration: 1s;
+}
+.activator{
+transform: translateY(0px) !important;
+    opacity: 1 !important;
 }
 .fors 
 {
@@ -28,7 +38,8 @@ html
     box-shadow: 15px 15px 50px purple;
     margin-top: 30vh;
     /* width: 40%; */
-    height: 50%;
+    min-height: 500px;
+    max-height: 600px;
     position: relative;
     padding: 50px;}
     .fors form i {

@@ -1,13 +1,14 @@
 let countsec=document.getElementById("sec3")
 let count=countsec.querySelectorAll("h1")
 let s3=false
+let sec3cont=countsec.querySelector(".container");
 count.forEach(el=>{
-    let num=0
+    let num=0   
 
 window.addEventListener("scroll",()=>{
     if(window.scrollY>countsec.offsetTop- countsec.offsetHeight-100&&!s3)
     {
-        
+        sec3cont.classList.add("activator");
          let inter=setInterval(()=>{
             el.innerHTML=num++
             if (num > parseInt(el.getAttribute("count"))) {
@@ -94,4 +95,64 @@ if (err == 0) {
 }
         
     })
+})
+
+
+
+let sec2=document.querySelector("#sec2 .container")
+let sec2it=false
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>sec2.offsetHeight-sec2.offsetTop-500 && !sec2it)
+    {
+        sec2it=true
+        sec2.classList.add("activator")
+    }
+})
+let sec4=document.querySelector("#sec4 .container")
+let sec4it=false
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>sec4.offsetTop-500&& !sec4it)
+    {
+        sec4it=true
+        sec4.classList.add("activator")
+    }
+})
+let sec5=document.querySelector("#sec5 .container")
+let sec5it=false
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>sec5.offsetTop-500 && !sec5it)
+    {
+        sec5it=true
+        sec5.classList.add("activator")
+    }
+})
+
+let sec7=document.querySelector("#sec7 .container")
+let sec7it=false
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>sec7.offsetTop-500 && !sec7it)
+    {
+        sec7it=true
+        sec7.classList.add("activator")
+    }
+})
+
+let sec8=document.querySelector("#sec8 .container")
+let sec8it=false
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>sec5.offsetTop-500 && !sec8it)
+    {
+        sec8it=true
+        sec8.classList.add("activator")
+    }
+})
+
+let footer=document.querySelector("footer .container")
+let foot=false
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>footer.offsetTop-500 && !foot)
+    {
+        foot=true
+        footer.classList.add("activator")
+    }
 })
