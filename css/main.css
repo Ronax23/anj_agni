@@ -36,10 +36,8 @@ transform: translateY(0px) !important;
 {
     background-color: white;
     box-shadow: 15px 15px 50px purple;
-    margin-top: 30vh;
-    /* width: 40%; */
-    min-height: 500px;
-    max-height: 600px;
+    margin-top: 20vh;
+    max-height: 500px;
     position: relative;
     padding: 50px;}
     .fors form i {
@@ -51,6 +49,7 @@ transform: translateY(0px) !important;
         right: 20px;
         top: 20px;
     }
+
 .stick
 {
     position: fixed;
@@ -273,6 +272,7 @@ footer
     background-color: #010A35;
     padding: 100px 0 20px 0;
     color: white;
+      overflow: hidden;
 }
 footer a 
 {
@@ -314,5 +314,12 @@ footer span
 {
     #sec6 .col-lg-6 {
     padding: 26px !important;
+}
+.cont
+{
+    padding: 125px 0;
+    max-height: 80VH;
+    min-height: 70VH;
+    height: 75VH;
 }
 }

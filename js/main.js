@@ -10,10 +10,11 @@ window.addEventListener("scroll",()=>{
     {
         sec3cont.classList.add("activator");
          let inter=setInterval(()=>{
-            el.innerHTML=num++
+             s3=true
+            el.innerHTML=++num
             if (num > parseInt(el.getAttribute("count"))) {
       clearInterval(inter);
-      s3=true
+
     }
         },50)
     }
@@ -24,7 +25,6 @@ window.addEventListener("scroll",()=>{
 let form=document.querySelector("#sec6 form")
 let spann=form.querySelectorAll("span")
 let txtarea=form.querySelector("textarea")
-console.log(form)
 let numer=0
 txtarea.addEventListener("keydown",()=>{
     spann[2].innerHTML=txtarea.value.length
@@ -136,7 +136,7 @@ window.addEventListener("scroll",()=>{
         sec7.classList.add("activator")
     }
 })
-
+let footerS=document.querySelector("footer .container")
 let sec8=document.querySelector("#sec8 .container")
 let sec8it=false
 window.addEventListener("scroll",()=>{
@@ -144,15 +144,6 @@ window.addEventListener("scroll",()=>{
     {
         sec8it=true
         sec8.classList.add("activator")
-    }
-})
-
-let footer=document.querySelector("footer .container")
-let foot=false
-window.addEventListener("scroll",()=>{
-    if(window.scrollY>footer.offsetTop-500 && !foot)
-    {
-        foot=true
-        footer.classList.add("activator")
+        footerS.classList.add("activator")
     }
 })
