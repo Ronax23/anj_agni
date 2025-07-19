@@ -160,27 +160,27 @@ transform: translateY(0px) !important;
 }
 .carousel-item:first-of-type
 {
-    background-image: linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/banner.jpg");
+    background-image: linear-gradient(rgba(1, 10, 53, .8)), url("../pics/banner.jpg");
     
 }
 .carousel-item:nth-child(2)
 {
-    background-image: linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/ban.jpg");
+    background-image: linear-gradient(rgba(1, 10, 53, .8)), url("../pics/ban.jpg");
     
 }
 
 #sec3 
 {
-    background-image: linear-gradient(rgba(1, 10, 53, .8)),  url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/vardhman_city-patel_nagar_bhopal-bhopal-vardhman_group.jpg");
+    background-image: linear-gradient(rgba(1, 10, 53, .8)),  url("../pics/vardhman_city-patel_nagar_bhopal-bhopal-vardhman_group.jpg");
 }
 .s5-img:nth-child(1)
 {
-    background-image:linear-gradient(rgba(1, 10, 53, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/w7.webp");
+    background-image:linear-gradient(rgba(1, 10, 53, .8)), url("../pics/w7.webp");
     background-attachment: fixed;
 }
 .s5-img:nth-child(2)
 {
-    background-image:linear-gradient(rgba(255, 255, 255, .8)), url("https://anjaniputra.osrrealtech.com/wp-content/themes/Anjani/media/w8.jpeg");
+    background-image:linear-gradient(rgba(255, 255, 255, .8)), url("../pics/w8.jpeg");
      background-attachment: fixed;
 }
 #sec6 form 
